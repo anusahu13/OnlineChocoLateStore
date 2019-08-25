@@ -58,10 +58,10 @@ public class Cart {
 	/* To calculate total added cost of the desired products */
 	public double getTotalCost() {
 		double totalCost = 0;
+		System.out.println("Calculating Total cost:");
 		for (Product product : contents.keySet()) {
 			totalCost += product.getPrice();
 		}
-		System.out.println("Calculated cost:");
 		return totalCost;
 	}
 	
