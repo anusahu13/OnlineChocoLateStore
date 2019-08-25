@@ -59,9 +59,9 @@ public class Cart {
 	public double getTotalCost() {
 		double totalCost = 0;
 		for (Product product : contents.keySet()) {
-			totalCost += product.getPrice();
+// 			totalCost += product.getPrice();
+			totalCost = totalCost + product.getPrice();
 		}
-		System.out.println("Total Cost:" + totalCost);
 		return totalCost;
 	}
 	
