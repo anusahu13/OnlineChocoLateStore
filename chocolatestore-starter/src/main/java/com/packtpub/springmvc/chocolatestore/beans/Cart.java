@@ -61,6 +61,7 @@ public class Cart {
 		for (Product product : contents.keySet()) {
 			totalCost += product.getPrice();
 		}
+		System.out.println("Calculated cost:");
 		return totalCost;
 	}
 	
