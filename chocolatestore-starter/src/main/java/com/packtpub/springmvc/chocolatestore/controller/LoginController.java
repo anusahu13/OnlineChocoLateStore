@@ -1,3 +1,5 @@
+/* Login Controller to check the validity of username and password */
+
 package com.packtpub.springmvc.chocolatestore.controller;
 
 import javax.servlet.http.HttpSession;
