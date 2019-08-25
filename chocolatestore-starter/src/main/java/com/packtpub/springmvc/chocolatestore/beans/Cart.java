@@ -1,3 +1,5 @@
+/** This class maintains the products in the cart. Adding the desired product in the cart and removing unnecessary product from cart */
+
 package com.packtpub.springmvc.chocolatestore.beans;
 
 import java.util.HashMap;
@@ -27,6 +29,7 @@ public class Cart {
 		return contents.keySet();
 	}
 	
+	/* To add a product in the cart */
 	public void addProduct(Product product, int count) {
 		
 		if (contents.containsKey(product)) {
@@ -37,11 +40,12 @@ public class Cart {
 		}
 	}
 	
-	
+	/* Remove the product from the cart */
 	public void removeProduct(Product product) {
 		contents.remove(product);
 	}
 	
+	/* To empty the cart */
 	public void clearCart() {
 		contents.clear();
 	}
@@ -51,6 +55,7 @@ public class Cart {
 		return contents.toString();
 	}
 	
+	/* To calculate total added cost of the desired products */
 	public double getTotalCost() {
 		double totalCost = 0;
 		for (Product product : contents.keySet()) {
